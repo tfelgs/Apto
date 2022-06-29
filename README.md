@@ -1,35 +1,26 @@
-v# 📄 How to write a good README
+## 📄 About this Project
 
-[![Spelling](https://github.com/banesullivan/README/actions/workflows/spelling.yml/badge.svg)](https://github.com/banesullivan/README/actions/workflows/spelling.yml)
-
-> *Your documentation is a direct reflection of your software, so hold it to the same standards.*
-
-After much practice, I have a recipe of sorts for writing READMEs that I follow anytime I make a new project. I wanted to share my process here, gather feedback, and see if I can lower the barrier to writing a good README.
-
-*This guide is geared towards projects that do not yet, or never will, have flushed out documentation. Once a project has a dedicated website, the README should turn into a minimal elevator pitch and "link fest" to relevant materials.*
-
+Apto is designed to help everyone and anyone learn more information on what supplements to take for a variety of performance or health related goals. Many businesses are not explaining the basic effect or goal of these supplements, but rather sayinig it will just make you look like whatever influencer is marketing the product. Apto will allow users to become more aware of what they are taking and the overall effect it has on their actual performance or health.  
 
 ## 🌟 Highlights
 
-I think a *"Highlights"* section is one of the most important to include at the top of a good README. Create a simple, bulleted list of the main selling points of your software.
+Here are the current and future features of Apto:
 
-Here are the main takeaways of this guide:
+- Reliable information on all supplements that we can get our hands on
+- View supplements that affect your goal!
+- Market information will appear showing products currently being sold on the market that are recommended for specific supplements or goals
+- Wishlists can be created to store supplements, goals, or products on the market that users want to go back and see
+- User reviews to store opinions on supplements taken
 
-- Make it inviting, friendly, and approachable
-- Find the most appealing part of your software and *sell it*!
-- Keep it concise; ain't nobody got time for your manifesto
-- Have links to *everything* relevant (documentation, CI status, deployments, etc.)
-- Emoji usage is encouraged (I'm only half kidding)
-- A [template](./TEMPLATE.md) for you to use!
-
+Future ideas
+- Features more focused towards gym media for sharing and messaging other users
+- Creaing a custom blend of supplements to see overall effect or if it is on the market already
 
 ## ℹ️ Overview
 
-> *If nothing else, try writing better READMEs because it will make you look more professional and legitimate.*
-
 A good README should include a brief overview section with a paragraph or two explaining what the software does, how it works, and who made it.
-
 Feel free to include 2-3 subsections here with relevant information in regards to who you are and how the software is relevant in a broader ecosystem of software (perhaps respectfully compare your software to other solutions out there).
+
 
 
 ### 😊 Leave a good impression
