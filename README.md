@@ -8,7 +8,7 @@ Here are the current and future features of Apto:
 
 - Reliable information on all supplements that we can get our hands on
 - View supplements that affect your goal!
-- Wishlists can be created to store supplements, goals, or products on the market that users want to go back and see
+- Wishlists can be created to store supplements or goals that users want to go back and see
 - User reviews to store opinions on supplements taken
 - Market information will appear showing products currently being sold on the market that are recommended for specific supplements or goals
 
