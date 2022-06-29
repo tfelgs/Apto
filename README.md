@@ -21,3 +21,7 @@ Future ideas
 
 A good README should include a brief overview section with a paragraph or two explaining what the software does, how it works, and who made it.
 Feel free to include 2-3 subsections here with relevant information in regards to who you are and how the software is relevant in a broader ecosystem of software (perhaps respectfully compare your software to other solutions out there).
+
+## Links
+
+https://www.figma.com/team_invite/redeem/diaD3qCccKUqDqzngyhr6M
