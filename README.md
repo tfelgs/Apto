@@ -28,4 +28,4 @@ Feel free to include 2-3 subsections here with relevant information in regards t
 - Figma for UI Mockups
 > https://www.figma.com/team_invite/redeem/diaD3qCccKUqDqzngyhr6M
 - Lucidchart for Database design
-> https://lucid.app/lucidchart/d7cc9edf-37f8-4285-b80f-14dfd5db8963/edit?viewport_loc=-11%2C-11%2C2219%2C1065%2C0_0&invitationId=inv_8d45ef73-2bc8-44f1-97b3-46a3e8bbd46d#
+> https://lucid.app/lucidchart/d7cc9edf-37f8-4285-b80f-14dfd5db8963/edit?page=0_0&invitationId=inv_8d45ef73-2bc8-44f1-97b3-46a3e8bbd46d#
