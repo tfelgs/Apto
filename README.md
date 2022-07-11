@@ -14,6 +14,7 @@ Here are the current and future features of Apto:
 - User reviews to store opinions on supplements taken
 
 Future ideas
+- In-depth predictive data analysis for continous use of a supplement
 - Features more focused towards gym media for sharing and messaging other users
 - Creaing a custom blend of supplements to see overall effect or if it is on the market already
 
