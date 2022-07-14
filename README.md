@@ -28,3 +28,5 @@ Feel free to include 2-3 subsections here with relevant information in regards t
 
 - Figma for UI Mockups
 > https://www.figma.com/team_invite/redeem/diaD3qCccKUqDqzngyhr6M
+- Google Doc for Project Overview
+> https://docs.google.com/document/d/1t3Jcbi5Htm3X1scz6riuTipGDyLT3ZYRvFXl4mJJUVk/edit
