@@ -1,0 +1,32 @@
+[
+  {
+    "_id": {
+      "$oid": "62d0780b3b489c71cd3131e8"
+    },
+    "name": "Whey Protein"
+  },
+  {
+    "_id": {
+      "$oid": "62d078e63b489c71cd3131f1"
+    },
+    "name": "Casein Protein"
+  },
+  {
+    "_id": {
+      "$oid": "62d078e63b489c71cd3131f2"
+    },
+    "name": "Creatine"
+  },
+  {
+    "_id": {
+      "$oid": "62d078e63b489c71cd3131f3"
+    },
+    "name": "Beta-Alanine"
+  },
+  {
+    "_id": {
+      "$oid": "62d078e63b489c71cd3131f4"
+    },
+    "name": "Caffeine"
+  }
+]

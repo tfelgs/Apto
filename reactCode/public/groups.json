@@ -1,0 +1,20 @@
+[
+  {
+    "_id": {
+      "$oid": "62d085b23b489c71cd31320b"
+    },
+    "name": "Metabolism Booster"
+  },
+  {
+    "_id": {
+      "$oid": "62d085b23b489c71cd31320c"
+    },
+    "name": "Strength Training"
+  },
+  {
+    "_id": {
+      "$oid": "62d085b23b489c71cd31320d"
+    },
+    "name": "Cardio"
+  }
+]

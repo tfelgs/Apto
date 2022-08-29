@@ -1,55 +1,35 @@
-.App {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: flex;
-}
-
-.App-row {
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  display: flex;
-  margin-right: 25px;
-}
-
-.App-bot {
-  margin-bottom: 38px;
-  height: 50%;
-}
-
-.Width-change.Dropdown {
-  width: 50%;
-}
-
-.Pagentation {
-  position: sticky;
-  left: 66%;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  padding: 40px;
+  text-align: center;
+  background: #31d6a5;
   color: white;
 }
 
-.Title {
-  color: #000000;
-  padding-top: 35px;
+.header h1 {
+  font-size: 60px;
+  color: black;
 }
 
-.Together {
-  display: flex;
-  align-items: center;
-  text-align: center
+.header p {
+  font-size: 18px;
+  color: black;
 }
 
-.Rpad {
-  margin-right: 25px;
+.content {
+  background: #31d6a5;
 }
 
+.footer {
+  font-size: 1.3vw;
+  padding: 10px;
+  text-align: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  border-top: 2px solid darkblue;
+  border-image: linear-gradient(to right, lightblue, white) 5;
+}
+
+.productsOnTheMarket {
+  font-size: 50px;
+}

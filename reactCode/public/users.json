@@ -1,0 +1,34 @@
+[
+  {
+    "_id": {
+      "$oid": "62d0780b3b489c71cd3131a8"
+    },
+    "name": "Tyler Felgenhauer",
+    "age": 22,
+    "sex": "male"
+  },
+  {
+    "_id": {
+      "$oid": "62d0780b3b489c71cd3131b8"
+    },
+    "name": "Dylan Felgenhauer",
+    "age": 22,
+    "sex": "male"
+  },
+  {
+    "_id": {
+      "$oid": "62d0780b3b489c71cd3131c8"
+    },
+    "name": "Nick Erickson",
+    "age": 19,
+    "sex": "male"
+  },
+  {
+    "_id": {
+      "$oid": "62d0780b3b489c71cd3131g8"
+    },
+    "name": "Derrick Brandt",
+    "age": 25,
+    "sex": "male"
+  }
+]
