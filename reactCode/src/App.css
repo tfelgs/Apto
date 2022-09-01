@@ -1,22 +1,24 @@
+.navbar {
+  padding: 10px;
+}
+
 .header {
   padding: 40px;
   text-align: center;
-  background: #31d6a5;
-  color: white;
 }
 
-.header h1 {
-  font-size: 60px;
-  color: black;
+.title,
+.slogan {
+  text-align: left;
 }
 
-.header p {
-  font-size: 18px;
-  color: black;
+.apto {
+  left: 0;
 }
 
-.content {
-  background: #31d6a5;
+.home {
+  background-color: rgb(119, 211, 119);
+  width: 100%;
 }
 
 .footer {
@@ -26,10 +28,4 @@
   bottom: 0;
   position: absolute;
   width: 100%;
-  border-top: 2px solid darkblue;
-  border-image: linear-gradient(to right, lightblue, white) 5;
-}
-
-.productsOnTheMarket {
-  font-size: 50px;
 }
