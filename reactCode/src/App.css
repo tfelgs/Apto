@@ -1,24 +1,6 @@
 .navbar {
   padding: 10px;
-}
-
-.header {
-  padding: 40px;
-  text-align: center;
-}
-
-.title,
-.slogan {
-  text-align: left;
-}
-
-.apto {
-  left: 0;
-}
-
-.home {
-  background-color: rgb(119, 211, 119);
-  width: 100%;
+  background-color: whitesmoke;
 }
 
 .footer {
@@ -28,4 +10,9 @@
   bottom: 0;
   position: absolute;
   width: 100%;
+}
+
+.content {
+  background-color: rgb(146, 235, 167);
+  bottom: 0px;
 }
