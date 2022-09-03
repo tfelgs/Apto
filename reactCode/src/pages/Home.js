@@ -11,11 +11,9 @@ function Home() {
         <div>
           <Head />
         </div>
+        <br></br>
         <div>
-          <Header class="h2" size="small">
-            <br></br>
-            Whats our goal?
-          </Header>
+            <Header as='h3'>Whats our goal?</Header>
           <p>
             Apto is designed to help everyone learn more information on what
             supplements to take for a variety of performance or health related
@@ -25,12 +23,11 @@ function Home() {
             users to become more aware of what they are taking and the overall
             effect it has on their actual performance or health.
           </p>
-          <Header class="h2" size="small">
-            What can we do currently?
-          </Header>
+          <Header as='h3'>What can we do currently?</Header>
+          <Container as='h3' textAlign='left'>Current Features</Container>
+          <Container as='h3' textAlign='left'>Future Features</Container>
           <p>
-            <h3>Current Features</h3>
-            <h3>Future Features</h3>- Reliable information on all supplements
+            - Reliable information on all supplements
             that we can get our hands on<br></br>- View supplements that affect
             your goal!<br></br>- Market information will appear showing products
             currently being sold on the market that are recommended for specific
