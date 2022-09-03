@@ -13,10 +13,8 @@ function Home() {
           <Head />
         </div>
         </Grid.Column>
-        <Grid.Column>
-        </Grid.Column>
-        <Grid.Column>
-        </Grid.Column>
+        <Grid.Column />
+        <Grid.Column />
       </Grid.Row>
       <Grid.Row>
         <Grid.Column>
