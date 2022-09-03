@@ -4,9 +4,11 @@
   "private": true,
   "dependencies": {
     "@babel/runtime": "^7.15.4",
+    "@semantic-ui-react/css-patch": "^1.1.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "babel-loader": "^8.2.5",
     "moment": "^2.29.1",
     "react": "^16.14.0",
     "react-datepicker": "^4.2.1",
@@ -14,7 +16,7 @@
     "react-datez": "^1.4.1",
     "react-dom": "^16.14.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-time-picker": "^4.4.2",
     "react-with-direction": "^1.4.0",
     "semantic-ui-css": "^2.4.1",
@@ -25,7 +27,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postinstall": "semantic-ui-css-patch"
   },
   "eslintConfig": {
     "extends": [
