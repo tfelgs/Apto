@@ -6,6 +6,6 @@ export default class Footer extends Component {
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
   render() {
-    return <div className="footer">Hi</div>;
+    return <div className="footer"></div>;
   }
 }

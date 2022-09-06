@@ -1,9 +1,42 @@
 .header {
-  padding: 40px;
   text-align: center;
 }
 
-.title,
-.slogan {
+.title {
   text-align: left;
+}
+
+.grid {
+  width: 100%;
+  background-color: rgb(160, 187, 159);
+}
+
+.row1,
+.row2 {
+  margin: 40px;
+}
+
+.box1,
+.box2 {
+  border-right: 3px solid rgb(50, 100, 53);
+  border-bottom: 3px solid rgb(50, 100, 53);
+  padding: 50px;
+  margin: 4rem;
+  background-color: rgb(214, 255, 224);
+}
+
+.divide {
+  background-color: rgb(50, 100, 53);
+}
+
+.slogan {
+  color: red;
+}
+
+.test1 {
+  background-color: rgb(214, 255, 224);
+}
+
+.test2 {
+  background-color: rgb(214, 255, 224);
 }
