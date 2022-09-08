@@ -12,6 +12,9 @@
   width: 100%;
 }
 
-.content {
-  bottom: 0px;
+.message {
+  color: white;
+  text-align: center;
+  background-color: black;
+  padding: 10px;
 }
