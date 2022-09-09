@@ -24,7 +24,7 @@ export default class NavBar extends Component {
                   width={50}
                   as={Link}
                   src={require("../images/logo.png")}
-                  to="/Home"
+                  to="/"
                 ></Image>
               </Menu.Item>
               <Dropdown item text="Supplements">
@@ -70,7 +70,7 @@ export default class NavBar extends Component {
 
           <div className="content">
             <Routes>
-              <Route path="Home" element={<Home />}></Route>
+              <Route path="/" element={<Home />}></Route>
               <Route
                 path="SupplementIndex"
                 element={<SupplementIndex />}
