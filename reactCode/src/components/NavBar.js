@@ -67,6 +67,7 @@ export default class NavBar extends Component {
               </Dropdown>
             </Menu>
           </div>
+
           <div className="content">
             <Routes>
               <Route path="Home" element={<Home />}></Route>

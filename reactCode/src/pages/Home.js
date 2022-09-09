@@ -31,23 +31,20 @@ function Home() {
             src={require("../images/vitaminsFalling.jpg")}
           ></Image>
         </Grid.Column>
-        <Grid.Column width={9}>
+        <Grid.Column width={11}>
           <Segment basic>
             <div>
               <Header as="h3" className="title">
-                Whats our goal?{" "}
+                Whats our goal?
               </Header>
               <Divider section className="divide" />
-              <p>
-                Apto is designed to help everyone learn more information on what
-                supplements to take for a variety of performance or health
-                related goals. Many businesses are not explaining the basic
-                effect or goal of these supplements, but rather sayinig it will
-                just make you look like whatever influencer is marketing the
-                product. Apto will allow users to become more aware of what they
-                are taking and the overall effect it has on their actual
-                performance or health.
-              </p>
+              Apto is designed to help everyone learn more information on what
+              supplements to take for a variety of performance or health related
+              goals. Many businesses are not explaining the basic effect or goal
+              of these supplements, but rather sayinig it will just make you
+              look like whatever influencer is marketing the product. Apto will
+              allow users to become more aware of what they are taking and the
+              overall effect it has on their actual performance or health.
             </div>
           </Segment>
           <Segment basic>
