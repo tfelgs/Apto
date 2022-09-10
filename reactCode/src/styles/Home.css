@@ -1,7 +1,4 @@
-.title {
-  text-align: center;
-}
-
+.title,
 .slogan {
   text-align: center;
 }
@@ -11,10 +8,25 @@
 }
 
 .apto {
-  font-size: 5rem;
+  font-size: 6rem;
+  font-family: monospace;
 }
 
-.vitaminsFalling {
+.row3 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.row5 {
+  background-color: white;
+  border-top: 1px solid lightblue;
+}
+
+p {
+  font-size: 17px;
+}
+
+.ProteinShake {
   margin: 30px;
 }
 
