@@ -5,7 +5,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <div className="message">
+      <div id="message">
         Welcome to Apto! This is a work in progress, please be kind! :)
       </div>
     );

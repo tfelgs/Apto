@@ -1,55 +1,94 @@
-import React from "react";
+import _ from "lodash";
+import supplements from "../JSON/supplements.json";
+import React, { Component } from "react";
+import { Search, Grid, List, Segment, Placeholder } from "semantic-ui-react";
 
-export default function App() {
-  const supplements = [
-    {
-      name: "Whey Protein",
-    },
-    {
-      name: "Casein Protein",
-    },
-    {
-      name: "Creatine",
-    },
-    {
-      name: "Beta-Alanine",
-    },
-    {
-      name: "Caffeine",
-    },
-  ];
+const initialState = { isLoading: false, results: [], value: "" };
 
-  const [searchedArray, setSearchedArray] = React.useState(supplements);
-  const [searchString, setSearchString] = React.useState("");
+export default class SearchExampleStandard extends Component {
+  state = initialState;
 
-  React.useEffect(() => {
-    if (searchString.length === 0) {
-      setSearchedArray(supplements);
-    } else {
-      const searchedObjects = [];
-      supplements.forEach((singleHeroObject, index) => {
-        Object.values(singleHeroObject).every((onlyValues, valIndex) => {
-          if (onlyValues.toLowerCase().includes(searchString.toLowerCase())) {
-            searchedObjects.push(singleHeroObject);
-            return;
-          }
-        });
+  handleResultSelect = (e, { result }) =>
+    this.setState({ value: result.title });
+
+  handleSearchChange = (e, { value }) => {
+    this.setState({ isLoading: true, value });
+
+    setTimeout(() => {
+      if (this.state.value.length < 1) return this.setState(initialState);
+
+      const re = new RegExp(_.escapeRegExp(this.state.value), "i");
+      const isMatch = (result) => re.test(result.title);
+
+      this.setState({
+        isLoading: false,
+        results: _.filter(supplements, isMatch),
       });
-      setSearchedArray(searchedObjects);
-    }
-  }, [searchString]);
+    }, 300);
+  };
 
-  return (
-    <div className="App">
-      <p>
-        <input
-          type="text"
-          value={searchString}
-          onChange={(e) => setSearchString(e.target.value)}
-          placeholder=" search... "
-        />
-      </p>
-      <pre>{JSON.stringify(searchedArray, null, "    ")}</pre>
-    </div>
-  );
+  render() {
+    const { isLoading, value, results } = this.state;
+
+    return (
+      <Grid centered columns={2}>
+        <Grid.Row>
+          <Grid.Column width={3}>
+            <Search
+              placeholder="Search for a supplement..."
+              fluid
+              loading={isLoading}
+              onResultSelect={this.handleResultSelect}
+              onSearchChange={_.debounce(this.handleSearchChange, 500, {
+                leading: true,
+              })}
+              results={results}
+              value={value}
+            />
+          </Grid.Column>
+          <Grid.Column />
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={3}>
+            <Segment>
+              <List>
+                {supplements.map((el) => {
+                  return <List.Content>{el.title}</List.Content>;
+                })}
+              </List>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column>
+            <Placeholder>
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+              <Placeholder.Line />
+            </Placeholder>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    );
+  }
 }
