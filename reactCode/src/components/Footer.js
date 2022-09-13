@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Menu, Container } from "semantic-ui-react";
+import { Menu, Container, Grid } from "semantic-ui-react";
+
 export default class Footer extends Component {
   state = { activeItem: "closest" };
 
@@ -10,44 +11,50 @@ export default class Footer extends Component {
 
     return (
       <div className="footer">
-        <Container>
-          <Menu text vertical>
-            <Menu.Item header>Sort By</Menu.Item>
-            <Menu.Item
-              name="closest"
-              active={activeItem === "closest"}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="mostComments"
-              active={activeItem === "mostComments"}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="mostPopular"
-              active={activeItem === "mostPopular"}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-          <Menu text vertical>
-            <Menu.Item header>Sort By</Menu.Item>
-            <Menu.Item
-              name="closest"
-              active={activeItem === "closest"}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="mostComments"
-              active={activeItem === "mostComments"}
-              onClick={this.handleItemClick}
-            />
-            <Menu.Item
-              name="mostPopular"
-              active={activeItem === "mostPopular"}
-              onClick={this.handleItemClick}
-            />
-          </Menu>
-        </Container>
+        <Grid columns={2}>
+          <Grid.Row>
+            <Grid.Column>
+              <Menu text vertical>
+                <Menu.Item header>Sort By</Menu.Item>
+                <Menu.Item
+                  name="closest"
+                  active={activeItem === "closest"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name="mostComments"
+                  active={activeItem === "mostComments"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name="mostPopular"
+                  active={activeItem === "mostPopular"}
+                  onClick={this.handleItemClick}
+                />
+              </Menu>
+            </Grid.Column>
+            <Grid.Column>
+              <Menu text vertical>
+                <Menu.Item header>Sort By</Menu.Item>
+                <Menu.Item
+                  name="closest"
+                  active={activeItem === "closest"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name="mostComments"
+                  active={activeItem === "mostComments"}
+                  onClick={this.handleItemClick}
+                />
+                <Menu.Item
+                  name="mostPopular"
+                  active={activeItem === "mostPopular"}
+                  onClick={this.handleItemClick}
+                />
+              </Menu>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </div>
     );
   }

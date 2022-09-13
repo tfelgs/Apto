@@ -7,10 +7,8 @@ import Message from "./components/Message";
 function App() {
   return (
     <div>
-      <div>
-        <Message />
-        <NavBar />
-      </div>
+      <Message />
+      <NavBar />
     </div>
   );
 }
