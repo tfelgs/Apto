@@ -1,9 +1,45 @@
-.header {
-  padding: 40px;
+.title,
+.slogan {
   text-align: center;
 }
 
-.title,
-.slogan {
-  text-align: left;
+.grid {
+  background-color: rgb(234, 248, 255);
+}
+
+.apto {
+  font-size: 6rem;
+  font-family: monospace;
+}
+
+.row3 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
+}
+
+.row5 {
+  background-color: white;
+  border-top: 1px solid lightblue;
+}
+
+p {
+  font-size: 17px;
+}
+
+.ProteinShake {
+  margin: 30px;
+}
+
+.box1,
+.box2 {
+  padding: 50px;
+  margin: 4rem;
+}
+
+.divide {
+  background-color: rgb(39, 102, 145);
+}
+
+.test1 {
+  background: #1b1c1d;
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { Dropdown, Menu, Image } from "semantic-ui-react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "../logo.png";
 import Home from "../pages/Home";
 import SupplementIndex from "../pages/SupplementIndex";
 import ByGoal from "../pages/ByGoal";
@@ -10,7 +9,7 @@ import MeetTheTeam from "../pages/MeetTheTeam";
 import OurMission from "../pages/OurMission";
 
 export default class NavBar extends Component {
-  state = { activeItem: "navbar" };
+  state = { activeItem: "home" };
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name });
 
@@ -22,39 +21,56 @@ export default class NavBar extends Component {
             <Menu secondary>
               <Menu.Item>
                 <Image
+                  width={50}
                   as={Link}
-                  src={require("../logo.png")}
-                  to="/Home"
+                  src={require("../images/logo.png")}
+                  to="/"
                 ></Image>
               </Menu.Item>
               <Dropdown item text="Supplements">
                 <Dropdown.Menu>
-                  <Dropdown.Item>
-                    <Link to="/SupplementIndex">Supplement Index</Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <Link to="/ByGoal">By Goal</Link>
-                  </Dropdown.Item>
+                  <Dropdown.Item
+                    text="Supplement Index"
+                    as={Link}
+                    to="/SupplementIndex"
+                    onClick={this.handleItemClick}
+                  />
+                  <Dropdown.Item
+                    text="By Goal"
+                    as={Link}
+                    to="/ByGoal"
+                    onClick={this.handleItemClick}
+                  />
                 </Dropdown.Menu>
               </Dropdown>
-              <Menu.Item>
-                <Link to="/ProductsOnTheMarket">Products on the Market</Link>
-              </Menu.Item>
+              <Menu.Item
+                name="Products on the Market"
+                as={Link}
+                to="/ProductsOnTheMarket"
+                onClick={this.handleItemClick}
+              />
               <Dropdown item text="About">
                 <Dropdown.Menu>
-                  <Dropdown.Item>
-                    <Link to="/OurMission">Our Mission</Link>
-                  </Dropdown.Item>
-                  <Dropdown.Item>
-                    <Link to="/MeetTheTeam">Meet The Team</Link>
-                  </Dropdown.Item>
+                  <Dropdown.Item
+                    text="Our Mission"
+                    as={Link}
+                    to="/OurMission"
+                    onClick={this.handleItemClick}
+                  />
+                  <Dropdown.Item
+                    text="Meet The Team"
+                    as={Link}
+                    to="/MeetTheTeam"
+                    onClick={this.handleItemClick}
+                  />
                 </Dropdown.Menu>
               </Dropdown>
             </Menu>
           </div>
+
           <div className="content">
             <Routes>
-              <Route path="Home" element={<Home />}></Route>
+              <Route path="/" element={<Home />}></Route>
               <Route
                 path="SupplementIndex"
                 element={<SupplementIndex />}
