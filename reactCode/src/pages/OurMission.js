@@ -1,6 +1,5 @@
 import "semantic-ui-css/semantic.min.css";
 import React from "react";
-import Head from "../components/Head";
 import "../logo.png";
 import { Container, Header, Image } from "semantic-ui-react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -10,9 +9,6 @@ const element = <h1 style={ hStyle }>Developer</h1>
 function OurMission() {
   return (
     <Container text>
-      <div>
-          <Head />
-        </div>
       <Header class="h1" className="title" size="large">
         Our Mission
       </Header>
