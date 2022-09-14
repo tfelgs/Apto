@@ -1,32 +1,59 @@
 [
   {
-    "_id": {
-      "$oid": "62d0780b3b489c71cd3131e8"
-    },
-    "name": "Whey Protein"
+    "title": "Whey Protein"
   },
   {
-    "_id": {
-      "$oid": "62d078e63b489c71cd3131f1"
-    },
-    "name": "Casein Protein"
+    "title": "Casein Protein"
   },
   {
-    "_id": {
-      "$oid": "62d078e63b489c71cd3131f2"
-    },
-    "name": "Creatine"
+    "title": "Creatine"
   },
   {
-    "_id": {
-      "$oid": "62d078e63b489c71cd3131f3"
-    },
-    "name": "Beta-Alanine"
+    "title": "Beta-Alanine"
   },
   {
-    "_id": {
-      "$oid": "62d078e63b489c71cd3131f4"
-    },
-    "name": "Caffeine"
+    "title": "Caffeine"
+  },
+  {
+    "title": "Taurine"
+  },
+  {
+    "title": "L-Citrulline"
+  },
+  {
+    "title": "Malic Acid"
+  },
+  {
+    "title": "L-Tyrosine"
+  },
+  {
+    "title": "Betanine"
+  },
+  {
+    "title": "Agmatine Sulfate"
+  },
+  {
+    "title": "Kanna"
+  },
+  {
+    "title": "Glycerol"
+  },
+  {
+    "title": "L-Carnitine"
+  },
+  {
+    "title": "Rauwolscine"
+  },
+  {
+    "title": "Green Tea Extract"
+  },
+  {
+    "title": "Glutamine"
+  },
+  {
+    "title": "DHEA"
+  },
+  {
+    "title": "Ashwagandha"
   }
 ]
