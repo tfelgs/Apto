@@ -1,7 +1,9 @@
 import _ from "lodash";
 import supplements from "../JSON/supplements.json";
 import React, { Component } from "react";
+import SupplementWindow from "./SupplementWindow";
 import { Search, Grid, List, Segment, Placeholder } from "semantic-ui-react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const initialState = { isLoading: false, results: [], value: "" };
 
@@ -31,6 +33,7 @@ export default class SearchExampleStandard extends Component {
     const { isLoading, value, results } = this.state;
 
     return (
+
       <Grid centered columns={2}>
         <Grid.Row>
           <Grid.Column width={3}>
@@ -44,48 +47,26 @@ export default class SearchExampleStandard extends Component {
               })}
               results={results}
               value={value}
-            />
+              />
           </Grid.Column>
           <Grid.Column />
         </Grid.Row>
         <Grid.Row>
           <Grid.Column width={3}>
             <Segment>
-              <List>
+              <List link>
                 {supplements.map((el) => {
-                  return <List.Content>{el.title}</List.Content>;
+                  return <List.Item as={Link}
+                  to="/SupplementWindow"
+                  onClick={this.handleItemClick}>{el.title } </List.Item>;
                 })}
               </List>
             </Segment>
           </Grid.Column>
           <Grid.Column>
-            <Placeholder>
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-              <Placeholder.Line />
-            </Placeholder>
+          <Routes>
+          <Route path="SupplementWindow" element={<SupplementWindow />}></Route>
+        </Routes>
           </Grid.Column>
         </Grid.Row>
       </Grid>
