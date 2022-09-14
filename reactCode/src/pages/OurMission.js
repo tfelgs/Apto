@@ -1,8 +1,12 @@
 import "semantic-ui-css/semantic.min.css";
 import React from "react";
 import Head from "../components/Head";
-import { Container, Header } from "semantic-ui-react";
+import "../logo.png";
+import { Container, Header, Image } from "semantic-ui-react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
+const hStyle = { color: 'red' };
+const element = <h1 style={ hStyle }>Developer</h1>
 function OurMission() {
   return (
     <Container text>
@@ -22,8 +26,30 @@ function OurMission() {
             users to become more aware of what they are taking and the overall
             effect it has on their actual performance or health.
           </p>
-          <Header as='h3'>What can we do currently?</Header>
-          
+          <Header className = 'title' class ='h1' size = 'large'>
+            Meet The Team!
+          </Header>
+          <Header className = 'title' class = 'h3'>
+            Tyler Felgenhauer - <span className='green'> Founder</span> and <span className = 'red'> Developer</span>
+          </Header>
+          <p>
+            Tyler is a college student going to Iowa State University. He has a hobby of working out at the gym.
+            And he noticed that when trying to find the perfect supplement for his workout he noticed 
+            how much of a struggle that really is. So he took the matters into his own hands and started to create
+            an application that you can use to find the perfect supplement for you.
+          </p>
+          <Header className = 'title' class = 'h3'>
+            Dylan Felgenhauer - <span className = 'red'> Developer</span>
+          </Header>
+          <p>
+            Dylan is the twin brother of Tyler Felgenhauer and a college student that goes to Illinois 
+            Institute of Technology. He is currently studying Computer Science and is a bartender.
+          </p>
+          <Image
+                  as={Link}
+                  src={require("../MeetTeam.png")}
+                  to="/Home"
+          ></Image>
         </div>
     </Container>
   );

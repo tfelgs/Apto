@@ -13,6 +13,14 @@
 }
 
 .content {
-  background-color: rgb(146, 235, 167);
+  background-color: rgb(234, 248, 255);
   bottom: 0px;
+}
+
+.red {
+  color:red;
+}
+
+.green {
+  color:green;
 }
