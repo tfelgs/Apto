@@ -1,6 +1,6 @@
 import "semantic-ui-css/semantic.min.css";
 import React from "react";
-import "../logo.png";
+import "../images/MeetTeam.png";
 import { Container, Header, Image } from "semantic-ui-react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
@@ -43,7 +43,7 @@ function OurMission() {
           </p>
           <Image
                   as={Link}
-                  src={require("../MeetTeam.png")}
+                  src={require("../images/MeetTeam.png")}
                   to="/Home"
           ></Image>
         </div>
