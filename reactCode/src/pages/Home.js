@@ -1,6 +1,14 @@
 import "semantic-ui-css/semantic.min.css";
 import React, { Component } from "react";
-import { Header, Grid, Divider, Image, Segment, List } from "semantic-ui-react";
+import {
+  Header,
+  Grid,
+  Divider,
+  Image,
+  Segment,
+  List,
+  Container,
+} from "semantic-ui-react";
 import "../styles/Home.css";
 
 export default class Home extends Component {
@@ -10,7 +18,7 @@ export default class Home extends Component {
 
   render() {
     return (
-      <Grid stackable columns={2} className="grid">
+      <Grid stackable columns={3} className="grid">
         <Grid.Row className="row1">
           <Grid.Column textAlign="centered" className="column1">
             <div className="slogan">
@@ -29,14 +37,18 @@ export default class Home extends Component {
         <Grid.Row className="row3" textAlign="centered">
           <h3 className="apto">Apto</h3>
         </Grid.Row>
-        <Grid.Row container stretched className="row4">
-          <Grid.Column width={3}>
-            <Image
-              className="ProteinShake"
-              src={require("../images/ProteinShake.jpg")}
-            ></Image>
+        <Grid.Row centered className="row4">
+          <Grid.Column only="computer" width={3}>
+            <Segment basic>
+              <Image
+                src={require("../images/ProteinShake.jpg")}
+                rounded
+                centered
+                width={250}
+              ></Image>
+            </Segment>
           </Grid.Column>
-          <Grid.Column width={11}>
+          <Grid.Column width={12}>
             <Segment basic>
               <div>
                 <Header as="h3" className="title">
@@ -65,14 +77,16 @@ export default class Home extends Component {
                 </Header>
                 <Divider section className="divide" />
                 <Header as="h3">Current Features</Header>
-                <Header as="h3">Future Features</Header>
                 <p>
                   - Reliable information on all supplements that we can get our
                   hands on
                   <br></br>- View supplements that affect your goal!
-                  <br></br>- Market information will appear showing products
-                  currently being sold on the market that are recommended for
-                  specific supplements or goals<br></br>- User profiles
+                </p>
+                <Header as="h3">Future Features</Header>
+                <p>
+                  - Market information will appear showing products currently
+                  being sold on the market that are recommended for specific
+                  supplements or goals<br></br>- User profiles
                   <br></br>- Wishlists can be created to store supplements or
                   goals that users want to go back and see
                   <br></br>- User reviews to store opinions on supplements taken
