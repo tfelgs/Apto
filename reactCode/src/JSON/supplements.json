@@ -1,59 +1,78 @@
 [
   {
-    "title": "Whey Protein"
+    "title": "Whey Protein",
+    "group": "Mass Builder"
   },
   {
-    "title": "Casein Protein"
+    "title": "Casein Protein",
+    "group": "Mass Builder"
   },
   {
-    "title": "Creatine"
+    "title": "Creatine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Beta-Alanine"
+    "title": "Beta-Alanine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Caffeine"
+    "title": "Caffeine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Taurine"
+    "title": "Taurine",
+    "group": "Mass Builder"
   },
   {
-    "title": "L-Citrulline"
+    "title": "L-Citrulline",
+    "group": "Mass Builder"
   },
   {
-    "title": "Malic Acid"
+    "title": "Malic Acid",
+    "group": "Mass Builder"
   },
   {
-    "title": "L-Tyrosine"
+    "title": "L-Tyrosine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Betanine"
+    "title": "Betanine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Agmatine Sulfate"
+    "title": "Agmatine Sulfate",
+    "group": "Mass Builder"
   },
   {
-    "title": "Kanna"
+    "title": "Kanna",
+    "group": "Mass Builder"
   },
   {
-    "title": "Glycerol"
+    "title": "Glycerol",
+    "group": "Mass Builder"
   },
   {
-    "title": "L-Carnitine"
+    "title": "L-Carnitine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Rauwolscine"
+    "title": "Rauwolscine",
+    "group": "Mass Builder"
   },
   {
-    "title": "Green Tea Extract"
+    "title": "Green Tea Extract",
+    "group": "Mass Builder"
   },
   {
-    "title": "Glutamine"
+    "title": "Glutamine",
+    "group": "Mass Builder"
   },
   {
-    "title": "DHEA"
+    "title": "DHEA",
+    "group": "Mass Builder"
   },
   {
-    "title": "Ashwagandha"
+    "title": "Ashwagandha",
+    "group": "Mass Builder"
   }
 ]

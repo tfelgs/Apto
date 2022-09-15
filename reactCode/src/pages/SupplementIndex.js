@@ -1,17 +1,21 @@
 import _ from "lodash";
 import supplements from "../JSON/supplements.json";
 import React, { Component } from "react";
-import SupplementWindow from "./SupplementWindow";
-import { Search, Grid, List, Segment, Placeholder } from "semantic-ui-react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Search, Grid, List, Segment, Header } from "semantic-ui-react";
 
-const initialState = { isLoading: false, results: [], value: "" };
+const initialState = {
+  isLoading: false,
+  results: [],
+  value: "",
+  result: [],
+};
 
 export default class SearchExampleStandard extends Component {
   state = initialState;
 
-  handleResultSelect = (e, { result }) =>
-    this.setState({ value: result.title });
+  handleResultSelect = (e, { result }) => {
+    this.setState({ value: result.title, result: result });
+  };
 
   handleSearchChange = (e, { value }) => {
     this.setState({ isLoading: true, value });
@@ -30,10 +34,17 @@ export default class SearchExampleStandard extends Component {
   };
 
   render() {
-    const { isLoading, value, results } = this.state;
+    const { isLoading, value, results, result } = this.state;
+
+    let hrefLink = " ";
+
+    const str = JSON.stringify(result);
+
+    const DisplayData = results.map((info) => {
+      return <div>{info.title}</div>;
+    });
 
     return (
-
       <Grid centered columns={2}>
         <Grid.Row>
           <Grid.Column width={3}>
@@ -47,7 +58,7 @@ export default class SearchExampleStandard extends Component {
               })}
               results={results}
               value={value}
-              />
+            />
           </Grid.Column>
           <Grid.Column />
         </Grid.Row>
@@ -56,17 +67,26 @@ export default class SearchExampleStandard extends Component {
             <Segment>
               <List link>
                 {supplements.map((el) => {
-                  return <List.Item as={Link}
-                  to="/SupplementWindow"
-                  onClick={this.handleItemClick}>{el.title } </List.Item>;
+                  return (
+                    <List.Item
+                      onClick={DisplayData}
+                      content={<a href={hrefLink}>{el.title}</a>}
+                    ></List.Item>
+                  );
                 })}
               </List>
             </Segment>
           </Grid.Column>
-          <Grid.Column>
-          <Routes>
-          <Route path="SupplementWindow" element={<SupplementWindow />}></Route>
-        </Routes>
+          <Grid.Column width={10}>
+            <Segment>
+              <Header>State</Header>
+              <pre style={{ overflowX: "auto" }}>
+                {JSON.stringify({ results, result }, null, 2)}
+              </pre>
+            </Segment>
+            <Segment>
+              <pre>{str}</pre>
+            </Segment>
           </Grid.Column>
         </Grid.Row>
       </Grid>

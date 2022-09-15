@@ -1,15 +1,28 @@
-import "semantic-ui-css/semantic.min.css";
 import React from "react";
-import { Container, Header } from "semantic-ui-react";
+import supplements from "../JSON/supplements.json";
 
 function SupplementWindow() {
+  const DisplayData = supplements.map((info) => {
+    return (
+      <tr>
+        <td>{info.title}</td>
+        <td>{info.group}</td>
+      </tr>
+    );
+  });
+
   return (
-    <Container text>
-      <br></br>
-      <Header class="h1" className="title" size="large">
-      SupplementWindow
-      </Header>
-    </Container>
+    <div>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>title</th>
+            <th>Group</th>
+          </tr>
+        </thead>
+        <tbody>{DisplayData}</tbody>
+      </table>
+    </div>
   );
 }
 

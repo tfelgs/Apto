@@ -1,14 +1,6 @@
 import "semantic-ui-css/semantic.min.css";
 import React, { Component } from "react";
-import {
-  Header,
-  Grid,
-  Divider,
-  Image,
-  Segment,
-  List,
-  Container,
-} from "semantic-ui-react";
+import { Header, Grid, Divider, Image, Segment, List } from "semantic-ui-react";
 import "../styles/Home.css";
 
 export default class Home extends Component {
