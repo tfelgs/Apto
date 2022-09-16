@@ -36,13 +36,9 @@ export default class SearchExampleStandard extends Component {
   render() {
     const { isLoading, value, results, result } = this.state;
 
-    let hrefLink = " ";
-
-    const str = JSON.stringify(result);
-
-    const DisplayData = results.map((info) => {
-      return <div>{info.title}</div>;
-    });
+    const name = JSON.stringify(result.title);
+    const group = JSON.stringify(result.group);
+    const description = JSON.stringify(result.description);
 
     return (
       <Grid centered columns={2}>
@@ -69,9 +65,14 @@ export default class SearchExampleStandard extends Component {
                 {supplements.map((el) => {
                   return (
                     <List.Item
-                      onClick={DisplayData}
-                      content={<a href={hrefLink}>{el.title}</a>}
-                    ></List.Item>
+                      as="a"
+                      onClick={this.handleResultSelect}
+                      loading={isLoading}
+                      results={results}
+                      value={value}
+                    >
+                      <List.Content>{el.title}</List.Content>
+                    </List.Item>
                   );
                 })}
               </List>
@@ -79,13 +80,9 @@ export default class SearchExampleStandard extends Component {
           </Grid.Column>
           <Grid.Column width={10}>
             <Segment>
-              <Header>State</Header>
-              <pre style={{ overflowX: "auto" }}>
-                {JSON.stringify({ results, result }, null, 2)}
-              </pre>
-            </Segment>
-            <Segment>
-              <pre>{str}</pre>
+              <pre>{name}</pre>
+              <pre>{group}</pre>
+              <pre>{description}</pre>
             </Segment>
           </Grid.Column>
         </Grid.Row>
