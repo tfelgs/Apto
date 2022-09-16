@@ -12,7 +12,7 @@
   width: 100%;
 }
 
-.message {
+#message {
   color: white;
   text-align: center;
   background-color: black;

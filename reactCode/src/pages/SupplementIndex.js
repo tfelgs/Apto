@@ -1,55 +1,92 @@
-import React from "react";
+import _ from "lodash";
+import supplements from "../JSON/supplements.json";
+import React, { Component } from "react";
+import { Search, Grid, List, Segment, Header } from "semantic-ui-react";
 
-export default function App() {
-  const supplements = [
-    {
-      name: "Whey Protein",
-    },
-    {
-      name: "Casein Protein",
-    },
-    {
-      name: "Creatine",
-    },
-    {
-      name: "Beta-Alanine",
-    },
-    {
-      name: "Caffeine",
-    },
-  ];
+const initialState = {
+  isLoading: false,
+  results: [],
+  value: "",
+  result: [],
+};
 
-  const [searchedArray, setSearchedArray] = React.useState(supplements);
-  const [searchString, setSearchString] = React.useState("");
+export default class SearchExampleStandard extends Component {
+  state = initialState;
 
-  React.useEffect(() => {
-    if (searchString.length === 0) {
-      setSearchedArray(supplements);
-    } else {
-      const searchedObjects = [];
-      supplements.forEach((singleHeroObject, index) => {
-        Object.values(singleHeroObject).every((onlyValues, valIndex) => {
-          if (onlyValues.toLowerCase().includes(searchString.toLowerCase())) {
-            searchedObjects.push(singleHeroObject);
-            return;
-          }
-        });
+  handleResultSelect = (e, { result }) => {
+    this.setState({ value: result.title, result: result });
+  };
+
+  handleSearchChange = (e, { value }) => {
+    this.setState({ isLoading: true, value });
+
+    setTimeout(() => {
+      if (this.state.value.length < 1) return this.setState(initialState);
+
+      const re = new RegExp(_.escapeRegExp(this.state.value), "i");
+      const isMatch = (result) => re.test(result.title);
+
+      this.setState({
+        isLoading: false,
+        results: _.filter(supplements, isMatch),
       });
-      setSearchedArray(searchedObjects);
-    }
-  }, [searchString]);
+    }, 300);
+  };
 
-  return (
-    <div className="App">
-      <p>
-        <input
-          type="text"
-          value={searchString}
-          onChange={(e) => setSearchString(e.target.value)}
-          placeholder=" search... "
-        />
-      </p>
-      <pre>{JSON.stringify(searchedArray, null, "    ")}</pre>
-    </div>
-  );
+  render() {
+    const { isLoading, value, results, result } = this.state;
+
+    const name = JSON.stringify(result.title);
+    const group = JSON.stringify(result.group);
+    const description = JSON.stringify(result.description);
+
+    return (
+      <Grid centered columns={2}>
+        <Grid.Row>
+          <Grid.Column width={3}>
+            <Search
+              placeholder="Search for a supplement..."
+              fluid
+              loading={isLoading}
+              onResultSelect={this.handleResultSelect}
+              onSearchChange={_.debounce(this.handleSearchChange, 500, {
+                leading: true,
+              })}
+              results={results}
+              value={value}
+            />
+          </Grid.Column>
+          <Grid.Column />
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={3}>
+            <Segment>
+              <List link>
+                {supplements.map((el) => {
+                  return (
+                    <List.Item
+                      as="a"
+                      onClick={this.handleResultSelect}
+                      loading={isLoading}
+                      results={results}
+                      value={value}
+                    >
+                      <List.Content>{el.title}</List.Content>
+                    </List.Item>
+                  );
+                })}
+              </List>
+            </Segment>
+          </Grid.Column>
+          <Grid.Column width={10}>
+            <Segment>
+              <pre>{name}</pre>
+              <pre>{group}</pre>
+              <pre>{description}</pre>
+            </Segment>
+          </Grid.Column>
+        </Grid.Row>
+      </Grid>
+    );
+  }
 }
