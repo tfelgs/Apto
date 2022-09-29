@@ -1,78 +1,110 @@
 [
-  {
-    "title": "Whey Protein",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Casein Protein",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Creatine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Beta-Alanine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Caffeine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Taurine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "L-Citrulline",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Malic Acid",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "L-Tyrosine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Betanine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Agmatine Sulfate",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Kanna",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Glycerol",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "L-Carnitine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Rauwolscine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Green Tea Extract",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Glutamine",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "DHEA",
-    "group": "Mass Builder"
-  },
-  {
-    "title": "Ashwagandha",
-    "group": "Mass Builder"
-  }
+	{
+		"title": "Whey Protein",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Casein Protein",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Creatine",
+		"description": "Creatine is a compound that is stored in your muscles and supplies them with energy. Your body produces some creatine (about 1 gram a day), and you get some creatine from eating animal-based foods, such as beef and salmon (about 500 milligrams in a 4-ounce serving). But it is only when you take much larger amounts of creatine from dietary supplements that it might improve certain types of performance."
+	},
+	{
+		"title": "Beta-Alanine",
+		"description": "Beta-alanine is an amino acid in foods such as meat, poultry, and fish. People get up to about 1 gram a day of beta-alanine, depending on their diet. Your body uses beta-alanine to make carnosine in skeletal muscles. When you exercise intensely for several minutes, your muscles produce lactic acid, which reduces muscular force and causes tiredness. Carnosine reduces the buildup of lactic acid. Beta-alanine supplements increase muscle carnosine levels by different amounts, depending on the person."
+	},
+	{
+		"title": "Caffeine",
+		"description": "Caffeine is a stimulant in beverages (like coffee, tea, and energy drinks) and in herbs (such as guarana and kola nut). Caffeine is also added to some dietary supplements. Moderate amounts of caffeine might increase your energy levels and reduce fatigue for several hours."
+	},
+	{
+		"title": "Taurine",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "L-Citrulline",
+		"description": "Citrulline is an amino acid that your body produces; it is also present in some foods. Your kidneys convert most citrulline into another amino acid, arginine. Your body then transforms the arginine into nitric oxide, which expands blood vessels. This expansion increases blood flow and the delivery of oxygen and nutrients to exercising muscles and speeds up the removal of waste products that cause muscle fatigue."
+	},
+	{
+		"title": "Malic Acid",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "L-Tyrosine",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Betanine",
+		"description": "Your body makes betaine, and it is also found in foods such as beets, spinach, and whole-grain bread. You get about 100 to 300 milligrams a day of betaine when you eat a nutritious diet. How betaine supplements might affect or improve your performance isn’t known."
+	},
+	{
+		"title": "Agmatine Sulfate",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Kanna",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Glycerol",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "L-Carnitine",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Rauwolscine",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Green Tea Extract",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Glutamine",
+		"description": "Glutamine is an amino acid that your body uses to produce energy. Adults consume about 3 to 6 grams a day from protein-containing foods such as meat, poultry, fish, eggs, dairy products, and legumes. Your body also makes some glutamine, mainly from BCAAs."
+	},
+	{
+		"title": "DHEA",
+		"description": "DHEA is a steroid hormone produced by the adrenal glands. Your body converts some DHEA into testosterone, the male hormone that enhances muscle size and strength."
+	},
+	{
+		"title": "Ashwagandha",
+		"description": "Mass Builder"
+	},
+	{
+		"title": "Arginine",
+		"description": "Arginine is an amino acid in foods that contain protein, like meat, poultry, fish, eggs, dairy products, and legumes. A nutritious diet supplies about 4 to 5 grams a day. Supplement sellers claim that taking larger amounts of arginine in supplements improves performance, partly because the body converts it into nitric oxide, which expands blood vessels and increases blood flow. Increased blood flow helps deliver oxygen and nutrients to exercising muscle and speeds up the removal of waste products that cause muscle fatigue."
+	},
+	{
+		"title": "Beetroot/Beet Juice",
+		"description": "Beets and beet juice are among the best food sources of nitrate. Beet juice might improve athletic performance because the body converts some of this nitrate to nitric oxide, which expands blood vessels. This blood vessel expansion increases blood flow and the delivery of oxygen and nutrients to exercising muscle. The expanded blood vessels also speed up the removal of waste products that cause muscle fatigue."
+	},
+	{
+		"title": "Beta-hydroxy-beta-methylbutyrate (HMB)",
+		"description": "Your body converts a small amount of leucine, one of the amino acids in foods and protein powders, to HMB. Your liver then converts the HMB into another compound that experts think helps muscle cells restore their structure and function after exercise. HMB also helps build protein in muscle and reduces muscle-protein breakdown."
+	},
+	{
+		"title": "Branched-chain amino acids (BCAAs)",
+		"description": "The amino acids leucine, isoleucine, and valine are known as BCAAs. Animal foods, like meat, fish, and milk, contain BCAAs. Your muscles can use these three amino acids to provide energy during exercise. Leucine might also help build muscle."
+	},
+	{
+		"title": "Quercetin",
+		"description": "Quercetin is a compound found in fruits, vegetables, and some beverages (like tea). Some experts suggest that quercetin supplements increase energy production in muscle and improve blood flow throughout your body. A nutritious diet provides up to about 13 milligrams a day of quercetin."
+	},
+	{
+		"title": "Ribose",
+		"description": "Ribose is a natural sugar your body makes that helps with energy production in muscle. Some scientists believe that ribose supplements help muscles produce more energy."
+	},
+	{
+		"title": "Sodium bicarbonate (Baking soda)",
+		"description": "Sodium bicarbonate is commonly known as baking soda. Exercising intensely over several minutes causes muscles to produce acids, such as lactic acid, that reduce muscle force and cause tiredness. Sodium bicarbonate can reduce the buildup of these acids."
+	},
+	{
+		"title": "Tribulus terrestris",
+		"description": "Tribulus terrestris is a plant containing compounds that some sellers claim can improve performance by increasing levels of several hormones, including the male hormone testosterone."
+	}
 ]
